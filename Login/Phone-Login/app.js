@@ -84,7 +84,7 @@ function showErrorMessage(erro_message){
             confirmationResult.confirm(otp_number).then((result) => {
                 // User signed in successfully.
                 const user = result.user;
-                window.location = '../index.html';
+                window.location = '../M/Project/';
             }).catch((error) => {
                 showErrorMessage(error.message);
             });
