@@ -33,7 +33,7 @@ firebase.auth().onAuthStateChanged(function(user) {
     }
 });
 
-if(window.location.pathname != '/../index.html'){
+if(window.location.pathname != '/../M/Project/'){
     // verification captcha setting 
     window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('sign-in-button', {
         'size': 'invisible',
@@ -84,7 +84,7 @@ function showErrorMessage(erro_message){
             confirmationResult.confirm(otp_number).then((result) => {
                 // User signed in successfully.
                 const user = result.user;
-                window.location = '../M/Project/';
+                window.location = '../index.html';
             }).catch((error) => {
                 showErrorMessage(error.message);
             });
