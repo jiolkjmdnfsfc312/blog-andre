@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Andre | Sign Up</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="shortcut icon" type="image/x-icon" href="../../assets/images/Logo/Andre.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+</head>
+
+<body>
+  <div class="login-form">
+    <div class="logo"><img src="../../assets/images/Logo/Andre-2.png" alt="Andre"></div>
+
+    <h6>Sign Up</h6>
+
+    <form id="registerForm">
+      <div class="message-wrapper" id="messageDiv">
+        <h6 class="message" style="text-align: center;"></h6>
+      </div>
+      <div class="textbox">
+        <input type="email" placeholder="Email" name="email">
+        <span class="check-message hidden">Required</span>
+      </div>
+
+      <div class="textbox">
+        <input type="password" placeholder="Password" name="password">
+        <span class="check-message hidden">Required</span>
+      </div>
+
+      <div class="options">
+        <label class="remember-me">
+          <span class="checkbox">
+            <input type="checkbox" required>
+            <span class="checked" required></span>
+          </span>
+          Remember me
+        </label>
+      </div>
+
+      <button type="submit" value="Sign Up Now" class="login-btn" disabled>Sign Up Now</button>
+      <div class="privacy-link">
+        <a href="#">Privacy Policy</a>
+      </div>
+    </form>
+
+    <div class="dont-have-account">
+      Don't have an Epic Games account?
+      <a href="../Sign-Up/">Sign Up</a>
+    </div>
+  </div>
+
+  <!-- App Javascript -->
+  <script src="../assets/js/app.js"></script>
+
+  <!-- Firebase Login -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+  <script src="../assets/js/login.js"></script>
+
+</body>
+
+</html>

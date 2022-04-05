@@ -24,7 +24,7 @@ var message_value = document.querySelector('.message');
 firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
         if(window.location.pathname != '/../../2022/Project/'){
-            window.location = '/../../M/Project/';
+            window.location = '/../../2022/Project/';
         }
     } else {
         if(window.location.pathname === '/../../2022/Project/'){
