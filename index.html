@@ -20,6 +20,30 @@
     <link rel="stylesheet" href="assets/css/plugins/feature.css">
     <!-- Style css -->
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="https://accounts.google.com/gsi/client" async defer ></script>
+    <script>
+      window.onGoogleLibraryLoad = () => {
+      google.accounts.id.initialize({
+        client_id:'--replace with your client id--',
+        cancel_on_tap_outside: false,
+        //callback: onOneTapSignedIn,
+        prompt_parent_id: "root",
+        //intermediate_iframe_close_callback : close_callback1
+      });
+      google.accounts.id.prompt((notification) => {
+        if (notification.isNotDisplayed()) {
+          console.log(notification.getNotDisplayedReason());
+        } else if (notification.isSkippedMoment()) {
+          console.log(notification.getSkippedReason());
+        } else if (notification.isDismissedMoment()) {
+          console.log(notification.getDismissedReason());
+        } else {
+          
+        }
+      });
+    }
+    </script>
 </head>
 
 <body class="template-color-1 spybody" data-spy="scroll" data-target=".navbar-example2" data-offset="70">
