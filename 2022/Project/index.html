@@ -213,26 +213,25 @@
                     <!-- Start Single Portfolio -->
                     <div data-aos="fade-up" data-aos-delay="100" data-aos-once="true"
                         class="col-lg-6 col-xl-4 col-md-6 col-12 mt--50 mt_md--30 mt_sm--30">
-                        <div class="rn-portfolio" data-toggle="modal" data-target="#myBlog-1">
+                        <div class="rn-portfolio" data-toggle="modal" data-target="#myWeatherApp-By-Andre">
                             <div class="inner">
                                 <div class="thumbnail">
-                                    <a data-toggle="modal" data-target="#myBlog-1">
-                                        <img src="assets/images/Blog-Img/fungames-logo.png" alt="Andre">
+                                    <a data-toggle="modal" data-target="#myWeatherApp-By-Andre">
+                                        <img src="../../assets/images/2022/Weather-App-By-Andre.png" alt="Andre">
                                     </a>
                                 </div>
                                 <div class="content">
                                     <div class="category-info">
                                         <div class="category-list">
-                                            <a data-toggle="modal" data-target="#myBlog-1">Project</a>
+                                            <a data-toggle="modal" data-target="#myWeatherApp-By-Andre">Project</a>
                                         </div>
                                         <div class="meta">
-                                            <span><a data-toggle="modal" data-target="#myBlog-1"><i
+                                            <span><a data-toggle="modal" data-target="#myWeatherApp-By-Andre"><i
                                                         class="feather-heart"></i></a>
                                                 600</span>
                                         </div>
                                     </div>
-                                    <h4 class="title"><a data-toggle="modal" data-target="#myBlog-1">FunGames Aplikasi
-                                            Game <i class="feather-arrow-up-right"></i></a></h4>
+                                    <h4 class="title"><a data-toggle="modal" data-target="#myWeatherApp-By-Andre">Build A Weather App in JavaScript <i class="feather-arrow-up-right"></i></a></h4>
                                 </div>
                             </div>
                         </div>
@@ -835,7 +834,7 @@
     <!-- End Footer Area -->
 
     <!-- myBlog1-FunGames -->
-    <div class="modal fade" id="myBlog-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="myWeatherApp-By-Andre" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -844,26 +843,16 @@
                     <h4 class="modal-title" id="myModalLabel">FunGames</h4>
                 </div>
                 <div class="modal-body"></div>
-                <span class="custom-close"> FunGames Merupakan Aplikasi Yang Saya Kembangkan Untuk Bermain Berbagai
-                    Kategori Game. Yang Dapat Kalian Mainkan Secara Free Di Hp Kalian. Saya Juga Menyediakan Group Chat
-                    Dalam Aplikasi Agar Kalian Dapat Berinteraksi Satu Sama Lain Dengan Member Lainnya. </span>
-                <br><br>
-
-                <form onsubmit="return passcheck()">
-                    <div class="error-text">
-                    </div>
-                    <span
-                        style="font-size: 22px; font-weight: bold; font-family: 'Noto Sans', sans-serif; margin-right: 25px;">Enter
-                        Password : </span>
-                    <div class="col-lg-12">
-                        <div class="form-group">
-                            <input class="form-control form-control-sm" required id="pass2" name="subject"
-                                type="password">
-                        </div>
-                    </div>
-                    <button type="submit" class="rn-btn" value="Download Now!">Download Now!</button>
-                </form>
-
+                <span class="custom-close" style="margin-top: 30px;"> Hai teman-teman, hari ini di blog ini, Anda akan download Aplikasi Cuaca di HTML CSS & JavaScript. Di blog sebelumnya, saya telah membagikan cara Mendapatkan Lokasi Pengguna di JavaScript, dan sekarang saatnya membuat aplikasi cuaca di JavaScript.
+                    <br><br>
+                    Di aplikasi cuaca ini, Anda bisa mendapatkan detail cuaca dari kota tertentu dengan memasukkan nama kota atau Anda juga bisa mendapatkan detail cuaca lokasi Anda saat ini dengan mengklik tombol “Dapatkan Lokasi Perangkat”. Jika Anda memasukkan nama kota yang tidak valid maka akan muncul pesan kesalahan.
+                    <br><br>
+                    Anda akan mendapatkan banyak detail cuaca di aplikasi ini seperti suhu dalam celsius, kondisi cuaca, lokasi, nuansa, dan kelembapan. Jika Anda merasa kesulitan untuk memahami apa yang saya katakan maka Anda dapat menonton video demo atau video tutorial lengkap dari proyek ini (Weather App in JavaScript). </span>
+                <div style="padding-top: 20px;">
+                    <a href="Download/Weather-App/">
+                        <button type="button" class="rn-btn" aria-hidden="true">Buka Project</button>
+                    </a>
+                </div>
             </div><!-- /.modal-content -->
         </div><!-- /.modal-dialog -->
     </div><!-- /.myBlog1-FunGames -->
@@ -884,39 +873,6 @@
     <script src="../../assets/js/vendor/particles.js"></script>
     <!-- main JS -->
     <script src="../../assets/js/main.js"></script>
-    <script>
-        // by https://www.gxfreee.com/
 
-        const errorText = document.querySelector(".error-text");
-        var Password = "1234";
-        function passcheck() {
-            if (document.getElementById('pass1').value != Password) {
-                errorText.style.display = "block";
-                errorText.textContent = "ERROR! Password Not Match.";
-                return false;
-            }
-            if (document.getElementById('pass1').value == Password) {
-                window.open("https://www.google.com", "_blank");
-            }
-
-        }
-
-
-        const errorText = document.querySelector(".error-text");
-        var Password = "123456";
-        function passcheck() {
-            if (document.getElementById('pass2').value != Password) {
-                errorText.style.display = "block";
-                errorText.textContent = "ERROR! Password Not Match.";
-                return false;
-            }
-            if (document.getElementById('pass1').value == Password) {
-                window.open("https://www.google.com", "_blank");
-            }
-
-        }
-        // by https://www.gxfreee.com/
-    </script>
 </body>
-
 </html>

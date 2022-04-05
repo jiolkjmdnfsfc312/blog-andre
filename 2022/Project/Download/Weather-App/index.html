@@ -5,21 +5,22 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Andre | Project</title>
+    <title>Andre | Weather App</title>
     <meta name="application-name" content="Blog | Andre">
     <meta name="description" content="Blog Andre - Berisi Tentang Coding Andre Dan Membagikan Seputar Coding">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="shortcut icon" type="image/x-icon" href="../../../assets/images/Logo/Andre.png">
+    <link rel="shortcut icon" type="image/x-icon" href="../../../../assets/images/Logo/Andre.png">
 
     <!-- CSS 
     ============================================ -->
-    <link rel="stylesheet" href="../../../assets/css/vendor/bootstrap.min.css">
-    <link rel="stylesheet" href="../../../assets/css/vendor/slick.css">
-    <link rel="stylesheet" href="../../../assets/css/vendor/slick-theme.css">
-    <link rel="stylesheet" href="../../../assets/css/vendor/aos.css">
-    <link rel="stylesheet" href="../../../assets/css/plugins/feature.css">
+    <link rel="stylesheet" href="../../../../assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../../assets/css/vendor/slick.css">
+    <link rel="stylesheet" href="../../../../assets/css/vendor/slick-theme.css">
+    <link rel="stylesheet" href="../../../../assets/css/vendor/aos.css">
+    <link rel="stylesheet" href="../../../../assets/css/plugins/feature.css">
     <!-- Style css -->
-    <link rel="stylesheet" href="../../../assets/css/style.css">
+    <link rel="stylesheet" href="../../../../assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body class="template-color-1 spybody" data-spy="scroll" data-target=".navbar-example2" data-offset="70">
@@ -32,7 +33,7 @@
                 <div class="header-left">
                     <div class="logo">
                         <a href="/">
-                            <img src="../../../assets/images/Logo/Andre-2.png" alt="Andre" sizes="20px">
+                            <img src="../../../../assets/images/Logo/Andre-2.png" alt="Andre" sizes="20px">
                         </a>
                     </div>
                 </div>
@@ -81,7 +82,7 @@
             <div class="menu-top">
                 <div class="menu-header">
                     <a class="logo" href="/">
-                        <img src="../../../assets/images/Logo/Andre-2.png" alt="Andre" style="width: 150px;">
+                        <img src="../../../../assets/images/Logo/Andre-2.png" alt="Andre" style="width: 150px;">
                     </a>
                     <div class="close-button">
                         <button class="close-menu-activation close"><i data-feather="x"></i></button>
@@ -156,20 +157,10 @@
                                             <b>www.fungames.my.id</b> Dan Dapat Kalian Unduh Aplikasi Nya Untuk Bermain
                                             Game Disana Secara Gratis.
                                         </p>
-                                        <form onsubmit="return passcheck()">
-                                            <div class="error-text">
-                                            </div>
-                                            <span
-                                                style="font-size: 22px; font-weight: bold; font-family: 'Noto Sans', sans-serif; margin-right: 25px;">Enter
-                                                Password : </span>
-                                            <div class="col-lg-12">
-                                                <div class="form-group">
-                                                    <input class="form-control form-control-sm" required id="pass1" name="subject"
-                                                        type="password">
-                                                </div>
-                                            </div>
-                                            <button type="submit" class="rn-btn" value="Download Now!">Download Now!</button>
-                                        </form>
+                                        <div style="padding-top: 20px;">
+                                            <button type="button" class="rn-btn" data-toggle="modal"
+                                                data-target="#myDownload-1" aria-hidden="true">Download Project</button>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -186,11 +177,14 @@
                                         <div class="skill-share-inner">
                                             <span class="title">best skill on</span>
                                             <ul class="skill-share d-flex liststyle">
-                                                <li><img src="../../../assets/images/icons/skills/html-5.png" alt="Andre">
+                                                <li><img src="../../../../assets/images/icons/skills/html-5.png"
+                                                        alt="Andre">
                                                 </li>
-                                                <li><img src="../../../assets/images/icons/skills/css-3.png" alt="Andre">
+                                                <li><img src="../../../../assets/images/icons/skills/css-3.png"
+                                                        alt="Andre">
                                                 </li>
-                                                <li><img src="../../../assets/images/icons/skills/js.png" alt="Andre"></li>
+                                                <li><img src="../../../../assets/images/icons/skills/js.png" alt="Andre">
+                                                </li>
                                             </ul>
                                         </div>
                                     </div>
@@ -201,9 +195,7 @@
                         <div class="order-1 order-lg-2 col-lg-5">
                             <div class="thumbnail">
                                 <div class="inner">
-                                    <iframe width="420" height="315"
-src="https://www.youtube.com/embed/tgbNymZ7vqY">
-</iframe>
+                                    <img src="../../../../assets/images/3d/Saly-13.png" alt="Andre">
                                 </div>
                             </div>
                         </div>
@@ -851,7 +843,8 @@ src="https://www.youtube.com/embed/tgbNymZ7vqY">
     <!-- End Footer Area -->
 
     <!-- myBlog1-FunGames -->
-    <div class="modal fade" id="myBlog-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal fade" id="myDownload-1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+        aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -860,26 +853,27 @@ src="https://www.youtube.com/embed/tgbNymZ7vqY">
                     <h4 class="modal-title" id="myModalLabel">FunGames</h4>
                 </div>
                 <div class="modal-body"></div>
-                <span class="custom-close"> FunGames Merupakan Aplikasi Yang Saya Kembangkan Untuk Bermain Berbagai
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/hHQGBRSApLc" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+                <span class="custom-close" style="margin-top: 30px;"> FunGames Merupakan Aplikasi Yang Saya Kembangkan
+                    Untuk Bermain Berbagai
                     Kategori Game. Yang Dapat Kalian Mainkan Secara Free Di Hp Kalian. Saya Juga Menyediakan Group Chat
                     Dalam Aplikasi Agar Kalian Dapat Berinteraksi Satu Sama Lain Dengan Member Lainnya. </span>
                 <br><br>
-
-                <form onsubmit="return passcheck()">
-                    <div class="error-text">
-                    </div>
-                    <span
-                        style="font-size: 22px; font-weight: bold; font-family: 'Noto Sans', sans-serif; margin-right: 25px;">Enter
-                        Password : </span>
-                    <div class="col-lg-12">
-                        <div class="form-group">
-                            <input class="form-control form-control-sm" required id="pass2" name="subject"
-                                type="password">
+                <div style="padding-top: 20px;">
+                    <div class="download-container">
+                        <a class="download-btn">Download Files <i class="fas fa-download"></i></a>
+                        <div class="countdown"></div>
+                        <div class="pleaseWait-text">Please wait..</div>
+                        <div class="manualDownload-text">
+                            If the download didn't start automatically, <a href="#" class="manualDownload-link">click
+                                here.</a>
                         </div>
                     </div>
-                    <button type="submit" class="rn-btn" value="Download Now!">Download Now!</button>
-                </form>
-
+                </div>
             </div><!-- /.modal-content -->
         </div><!-- /.modal-dialog -->
     </div><!-- /.myBlog1-FunGames -->
@@ -887,37 +881,20 @@ src="https://www.youtube.com/embed/tgbNymZ7vqY">
     <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.3.0/firebase-firestore.js"></script>
-    <script src="../../../assets/js/app.js"></script>
+    <script src="../../../../assets/js/app.js"></script>
     <!-- JS ============================================ -->
-    <script src="../../../assets/js/vendor/jquery.js"></script>
-    <script src="../../../assets/js/vendor/modernizer.min.js"></script>
-    <script src="../../../assets/js/vendor/feather.min.js"></script>
-    <script src="../../../assets/js/vendor/slick.min.js"></script>
-    <script src="../../../assets/js/vendor/bootstrap.js"></script>
-    <script src="../../../assets/js/vendor/text-type.js"></script>
-    <script src="../../../assets/js/vendor/wow.js"></script>
-    <script src="../../../assets/js/vendor/aos.js"></script>
-    <script src="../../../assets/js/vendor/particles.js"></script>
+    <script src="../../../../assets/js/vendor/jquery.js"></script>
+    <script src="../../../../assets/js/vendor/modernizer.min.js"></script>
+    <script src="../../../../assets/js/vendor/feather.min.js"></script>
+    <script src="../../../../assets/js/vendor/slick.min.js"></script>
+    <script src="../../../../assets/js/vendor/bootstrap.js"></script>
+    <script src="../../../../assets/js/vendor/text-type.js"></script>
+    <script src="../../../../assets/js/vendor/wow.js"></script>
+    <script src="../../../../assets/js/vendor/aos.js"></script>
+    <script src="../../../../assets/js/vendor/particles.js"></script>
     <!-- main JS -->
-    <script src="../../../assets/js/main.js"></script>
-    <script>
-        // by https://www.gxfreee.com/
-
-        const errorText = document.querySelector(".error-text");
-        var Password = "1234";
-        function passcheck() {
-            if (document.getElementById('pass1').value != Password) {
-                errorText.style.display = "block";
-                errorText.textContent = "ERROR! Password Not Match.";
-                return false;
-            }
-            if (document.getElementById('pass1').value == Password) {
-                window.open("https://www.google.com", "_blank");
-            }
-
-        }
-        // by https://www.gxfreee.com/
-    </script>
+    <script src="../../../../assets/js/main.js"></script>
+    <script src="assets/js/style.js"></script>
 </body>
 
 </html>
