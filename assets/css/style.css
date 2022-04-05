@@ -14643,3 +14643,18 @@ body.white-version {
 
 .white-version .slider-style-6 .cd-headline span {
   color: var(--color-white) !important; }
+
+
+
+.error-text{
+      background: #F8D7DA;
+      padding: 15px;
+      border-radius: 5px;
+      color: #8B3E46;
+      border: 1px solid #F5C6CB;
+      display: none;
+      margin-bottom: 10px;
+      font-weight: bold;
+      width: 100%;
+      text-align: center;
+    }

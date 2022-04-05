@@ -23,17 +23,17 @@ var message_value = document.querySelector('.message');
 // check if user is logged in or not
 firebase.auth().onAuthStateChanged(function(user) {
     if (user) {
-        if(window.location.pathname != '/../../M/Project/'){
+        if(window.location.pathname != '/../../2022/Project/'){
             window.location = '/../../M/Project/';
         }
     } else {
-        if(window.location.pathname === '/../../M/Project/'){
+        if(window.location.pathname === '/../../2022/Project/'){
             window.location = 'index.html';
         }
     }
 });
 
-if(window.location.pathname != '/../../M/Project/'){
+if(window.location.pathname != '/../../2022/Project/'){
     // verification captcha setting 
     window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('sign-in-button', {
         'size': 'invisible',
@@ -84,7 +84,7 @@ function showErrorMessage(erro_message){
             confirmationResult.confirm(otp_number).then((result) => {
                 // User signed in successfully.
                 const user = result.user;
-                window.location = '../../M/Project/';
+                window.location = '../../2022/Project/';
             }).catch((error) => {
                 showErrorMessage(error.message);
             });
