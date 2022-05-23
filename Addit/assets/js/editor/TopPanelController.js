@@ -105,7 +105,7 @@ angular.module('ImageEditor')
     };
 
     $scope.openSampleImage = function() {
-        canvas.loadMainImage('assets/images/lotus.jpg');
+        canvas.loadMainImage('assets/images/andre.png');
         $scope.closeUploadDialog();
         $rootScope.started = true;
     };
