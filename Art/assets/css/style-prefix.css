@@ -1186,7 +1186,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   padding: 4px 0;
 }
 
-.sidebar .price-box {
+.sidebar .date-box {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1198,12 +1198,12 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   gap: 15px;
 }
 
-.sidebar .price-box del {
+.sidebar .date-box del {
   color: var(--sonic-silver);
   font-size: 13px;
 }
 
-.sidebar .price-box .price {
+.sidebar .date-box .date {
   font-size: var(--fs-7);
   font-weight: var(--weight-600);
   color: var(--davys-gray);
@@ -1291,7 +1291,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 
 .product-minimal .showcase-category:hover { color: var(--salmon-pink); }
 
-.product-minimal .price-box {
+.product-minimal .date-box {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1303,13 +1303,13 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   gap: 10px;
 }
 
-.product-minimal .price {
+.product-minimal .date {
   font-size: var(--fs-7);
   font-weight: var(--weight-700);
   color: var(--salmon-pink);
 }
 
-.product-minimal .price-box del {
+.product-minimal .date-box del {
   font-size: var(--fs-9);
   color: var(--sonic-silver);
 }
@@ -1391,7 +1391,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   margin-bottom: 10px;
 }
 
-.product-featured .price-box {
+.product-featured .date-box {
   font-size: var(--fs-3);
   display: -webkit-box;
   display: -webkit-flex;
@@ -1401,7 +1401,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   margin-bottom: 10px;
 }
 
-.product-featured .price {
+.product-featured .date {
   color: var(--salmon-pink);
   font-weight: var(--weight-700);
 }
@@ -1667,7 +1667,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   margin-bottom: 10px;
 }
 
-.product-grid .price-box {
+.product-grid .date-box {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1678,7 +1678,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   margin-bottom: 10px;
 }
 
-.product-grid .price { font-weight: var(--weight-700); }
+.product-grid .date { font-weight: var(--weight-700); }
 
 .product-grid del { color: var(--sonic-silver); }
 

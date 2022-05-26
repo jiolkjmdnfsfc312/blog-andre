@@ -928,7 +928,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   padding: 4px 0;
 }
 
-.sidebar .price-box {
+.sidebar .date-box {
   display: flex;
   align-items: center;
   gap: 15px;

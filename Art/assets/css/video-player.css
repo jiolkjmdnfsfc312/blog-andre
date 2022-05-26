@@ -16,7 +16,7 @@ body{
 
 .container{
    max-width: 1200px;
-   margin:80px auto;
+   margin:50px auto;
    display: flex;
    flex-wrap: wrap;
    align-items: flex-start;
@@ -44,7 +44,7 @@ body{
 
 .container .video-list-container{
    flex:1 1 350px;
-   height: 500px;
+   height: 485px;
    overflow-y: scroll;
    border-radius: 5px;
    box-shadow: 0 5px 15px rgba(0,0,0,.1);
