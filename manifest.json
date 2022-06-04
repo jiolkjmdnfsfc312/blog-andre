@@ -1,7 +1,7 @@
 {
     "name": "Blog'Andre",
     "short_name": "Blog Andre",
-    "start_url": "/PWA-Blog/",
+    "start_url": "/",
     "display": "standalone",
     "background_color": "#fdfdfd",
     "theme_color": "#db4938",
