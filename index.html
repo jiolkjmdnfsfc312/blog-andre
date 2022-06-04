@@ -9,6 +9,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
   <link rel="stylesheet" href="assets/css/blog-andre.css">
   <link rel="stylesheet" href="assets/css/blog-andre-2.css">
+  <link rel="icon" href="assets/img/logo/andre.png">
+  <link rel="manifest" href="manifest.json">
 
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
@@ -77,9 +79,9 @@
         </div>
 
         <div class="mt-3 rounded-md shadow">
-            <a href="Blog/m/project/" class="w-full flex flex-col items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-gray-200 hover:bg-gray-100 md:py-4 md:text-lg md:px-10">
-                <h1>Andre Art</h1>
-                <span class="text-sm">My Art Sketch</span>
+            <a href="" class="w-full flex flex-col items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-gray-200 hover:bg-gray-100 md:py-4 md:text-lg md:px-10 add-button">
+                <h1>Blog Andre App</h1>
+                <span class="text-sm">Portfolio Web App Andre</span>
             </a>
         </div>
 
@@ -106,5 +108,35 @@
 <!-- partial -->
 
 <script src="assets/js/blog-andre.js"></script>
+<script>
+    /*=============== PWA Download ===============*/
+let deferredPrompt;
+const addBtn = document.querySelector('.add-button');
+addBtn.style.display = 'none';
+window.addEventListener('beforeinstallprompt', (e) => {
+  // Prevent Chrome 67 and earlier from automatically showing the prompt
+  e.preventDefault();
+  // Stash the event so it can be triggered later.
+  deferredPrompt = e;
+  // Update UI to notify the user they can add to home screen
+  addBtn.style.display = 'block';
+
+  addBtn.addEventListener('click', (e) => {
+    // hide our user interface that shows our A2HS button
+    addBtn.style.display = 'none';
+    // Show the prompt
+    deferredPrompt.prompt();
+    // Wait for the user to respond to the prompt
+    deferredPrompt.userChoice.then((choiceResult) => {
+        if (choiceResult.outcome === 'accepted') {
+          console.log('User accepted the A2HS prompt');
+        } else {
+          console.log('User dismissed the A2HS prompt');
+        }
+        deferredPrompt = null;
+      });
+  });
+});
+</script>
 </body>
 </html>
