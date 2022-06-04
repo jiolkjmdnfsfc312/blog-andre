@@ -1,43 +1,27 @@
 {
-    "name": "Blog'Andre",
+    "name": "Blog Andre",
     "short_name": "Blog Andre",
-    "start_url": "/PWA-Blog/",
-    "display": "standalone",
-    "background_color": "#fdfdfd",
-    "theme_color": "#db4938",
-    "orientation": "portrait-primary",
     "icons": [
       {
         "src": "/assets/img/logo/andre.png",
-        "type": "image/png", "sizes": "72x72"
+        "sizes": "192x192",
+        "type": "image/png",
+        "purpose": "any maskable"
       },
       {
         "src": "/assets/img/logo/andre.png",
-        "type": "image/png", "sizes": "96x96"
+        "sizes": "384x384",
+        "type": "image/png"
       },
       {
         "src": "/assets/img/logo/andre.png",
-        "type": "image/png","sizes": "128x128"
-      },
-      {
-        "src": "/assets/img/logo/andre.png",
-        "type": "image/png", "sizes": "144x144"
-      },
-      {
-        "src": "/assets/img/logo/andre.png",
-        "type": "image/png", "sizes": "152x152"
-      },
-      {
-        "src": "/assets/img/logo/andre.png",
-        "type": "image/png", "sizes": "192x192"
-      },
-      {
-        "src": "/assets/img/logo/andre.png",
-        "type": "image/png", "sizes": "384x384"
-      },
-      {
-        "src": "/assets/img/logo/andre.png",
-        "type": "image/png", "sizes": "512x512"
+        "sizes": "512x512",
+        "type": "image/png"
       }
-    ]
+    ],
+    "theme_color": "#09ec82",
+    "background_color": "#171722",
+    "start_url": "/PWA-Blog/",
+    "display": "standalone",
+    "orientation": "portrait"
   }

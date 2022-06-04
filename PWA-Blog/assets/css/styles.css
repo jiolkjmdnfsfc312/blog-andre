@@ -206,10 +206,12 @@ body.dark-theme {
   font-size: 1.25rem;
   color: var(--title-color);
   transition: .3s;
+  cursor: none;
 }
 
 .profile__social-link:hover {
   color: var(--first-color);
+  cursor: none;
 }
 
 .profile__info {
