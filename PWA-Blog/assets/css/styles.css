@@ -86,6 +86,7 @@ img {
   color: var(--title-color);
   cursor: pointer;
   transition: .3s;
+  cursor: none;
 }
 
 .change-theme:hover {
@@ -198,6 +199,7 @@ body.dark-theme {
   display: flex;
   justify-content: center;
   column-gap: .75rem;
+  cursor: none;
 }
 
 .profile__social-link {
@@ -235,6 +237,7 @@ body.dark-theme {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: none;
 }
 
 .profile__buttons {
