@@ -7,9 +7,20 @@ function vanish() {
   loader.classList.add("disppear");
 }
 
+
+/*=============== PWA ===============*/
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", function() {
+    navigator.serviceWorker
+      .register("/serviceWorker.js")
+      .then(res => console.log("service worker registered"))
+      .catch(err => console.log("service worker not registered", err))
+  })
+}
+
 /*=============== PWA Download ===============*/
 let deferredPrompt;
-const addBtn = document.querySelector('.add-button');
+const addBtn = document.querySelector('.download-pwa');
 addBtn.style.display = 'none';
 window.addEventListener('beforeinstallprompt', (e) => {
   // Prevent Chrome 67 and earlier from automatically showing the prompt
