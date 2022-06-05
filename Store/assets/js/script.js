@@ -24,9 +24,7 @@ for (let i = 0; i < navbarLinks.length; i++) {
 
 
 
-/**
- * header active on scroll
- */
+/** header active on scroll */
 
 const header = document.querySelector("[data-header]");
 
@@ -36,28 +34,84 @@ window.addEventListener("scroll", function () {
 });
 
 
-/*=============== SHOW MODAL ===============*/
-const allToggleModal = document.querySelectorAll('[data-toggle="modal"]')
-
-allToggleModal.forEach(btn=> {
-	btn.addEventListener('click', function (e) {
-		e.preventDefault()
-		const modal = document.querySelector(this.dataset.target)
-		const modalClose = modal.querySelector('.modal__close')
-
-		modal.classList.add('show')
-
-		modalClose.addEventListener('click', function (e) {
-			e.preventDefault()
-			modal.classList.remove('show')
-		})
-	})
-})
-
-
-
-document.addEventListener('click', function (e) {
-	if(e.target.matches('.modal')) {
-		e.target.classList.remove('show')
+/** Modal Product */
+var Modal = (function() {
+	var openedModal;
+  
+	return {
+	  open,
+	  close,
+	  change,
+	  alert
+	};
+  
+	function open(target, callback) {
+	  document.documentElement.classList.add("is-scroll-disabled");
+	  openedModal = document.querySelector(target);
+	  openedModal.dataset.opened = "true";
+	  callback && callback(openedModal);
+  
+	  // Add youtube iframe video src or video src
+	  if (openedModal.dataset.video) {
+		if (openedModal.dataset.video.includes("youtube")) {
+		  var vParam = openedModal.dataset.video.split("v=");
+		  var videoId = vParam[1].includes("&")
+			? vParam[1].substr(0, vParam[1].indexOf("&"))
+			: vParam[1];
+		  var embed =
+			"https://www.youtube.com/embed/" +
+			videoId +
+			"?rel=0&amp;controls=1&amp;showinfo=0&amp;autoplay=1";
+		  openedModal.querySelector("iframe").src = embed;
+		} else {
+		  openedModal.querySelector("video").src = openedModal.dataset.video;
+		}
+	  }
+  
+	  // Add iframe src
+	  if (openedModal.dataset.iframe) {
+		openedModal.querySelector("iframe").src = openedModal.dataset.iframe;
+	  }
 	}
-})
+  
+	function close(event, callback) {
+	  if (event) {
+		event.preventDefault(), event.stopPropagation();
+		if (!event.target.dataset.hasOwnProperty("modalClose")) return;
+	  }
+  
+	  document.documentElement.classList.remove("is-scroll-disabled");
+	  openedModal.dataset.opened = "false";
+  
+	  // Remove video iframe url or iframe src
+	  if (openedModal.dataset.iframe) {
+		openedModal.querySelector("iframe").src = "";
+	  }
+  
+	  // Remove video iframe src or video src
+	  if (openedModal.dataset.video) {
+		if (openedModal.dataset.video.includes("youtube")) {
+		  openedModal.querySelector("iframe").src = "";
+		} else {
+		  var video = openedModal.querySelector("video");
+		  video.pause();
+		  video.currentTime = 0;
+		}
+	  }
+  
+	  callback && callback(openedModal);
+	}
+  
+	function change(target, event) {
+	  event && (event.preventDefault(), event.stopPropagation());
+	  openedModal.dataset.opened = "false";
+	  openedModal = document.querySelector(target);
+	  openedModal.dataset.opened = "true";
+	}
+  
+	function alert(element, text) {
+	  open(element, function(element) {
+		text && (element.querySelector(".modal--content").innerHTML = text);
+	  });
+	}
+  })();

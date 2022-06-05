@@ -6,39 +6,26 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Ridex - Rent your favourite car</title>
-
-  <!-- 
-    - favicon
-  -->
+  <!--  favicon -->
   <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
-
-  <!-- 
-    - custom css link
-  -->
+  <!--  custom css link -->
   <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!-- 
-    - google font link
-  -->
+  <!--  google font link -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Open+Sans&display=swap"
-    rel="stylesheet">
-</head>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Open+Sans&display=swap" rel="stylesheet">
 
+</head>
 <body>
 
-  <!-- 
-    - #HEADER
-  -->
-
+  <!-- #HEADER -->
   <header class="header" data-header>
     <div class="container">
 
       <div class="overlay" data-overlay></div>
 
       <a href="#" class="logo">
-        <img src="./assets/images/logo.svg" alt="Ridex logo">
+        <h2>Andre</h2>
       </a>
 
       <nav class="navbar" data-navbar>
@@ -71,13 +58,13 @@
           <span class="contact-time">Mon - Sat: 9:00 am - 6:00 pm</span>
         </div>
 
-        <a href="#featured-car" class="btn" aria-labelledby="aria-label-txt">
+        <a onclick="Modal.open('#modal02')" class="btn" aria-labelledby="aria-label-txt">
           <ion-icon name="car-outline"></ion-icon>
 
           <span id="aria-label-txt">Explore cars</span>
         </a>
 
-        <a href="#open-modal" class="btn user-btn" aria-label="Profile">
+        <a onclick="Modal.open('#modal01')" class="btn user-btn" aria-label="Profile">
           <ion-icon name="person-outline"></ion-icon>
         </a>
 
@@ -171,7 +158,7 @@
               <div class="featured-car-card">
 
                 <figure class="card-banner">
-                  <img src="./assets/images/car-1.jpg" alt="Toyota RAV4 2021" loading="lazy" width="440" height="300"
+                  <img src="./assets/images/car-1.jpg" onclick="Modal.open('#modal02')" alt="Toyota RAV4 2021" loading="lazy" width="440" height="300"
                     class="w-100">
                 </figure>
 
@@ -219,13 +206,11 @@
                       <strong>$440</strong> / month
                     </p>
 
-                    <button class="btn fav-btn" aria-label="Add to favourite list">
+                    <button onclick="Modal.open('#modal02')" class="btn fav-btn" aria-label="Add to favourite list">
                       <ion-icon name="heart-outline"></ion-icon>
                     </button>
 
-                    <a href="#open-modal2">
-                      <button class="btn">Rent now</button>
-                    </a>
+                    <button class="btn" onclick="Modal.open('#modal02')">Rent now</button>
 
                   </div>
 
@@ -1045,25 +1030,97 @@
     </div>
   </footer>
 
-  <div id="open-modal" class="modal-window">
-    <div>
-        <a href="#modal-close" title="Close" class="modal-close">Close</a>
-     <h1>Header</h1>
-      <img src="http://media3.giphy.com/media/vc5L6VoTB6tnW/giphy.gif" class="img"></img>
-     <div>Nam tempor turpis sapien, a scelerisque purus pretium vitae. Nunc arcu nulla, pulvinar a ipsum id, sodales consequat enim. Aenean dapibus cursus accumsan.</div>
-    </div>
-</div>
-
-
-<div id="open-modal2" class="modal-window">
-  <div>
-      <a href="#modal-close" title="Close" class="modal-close">Close</a>
-   <h1>Header</h1>
-    <img src="http://media3.giphy.com/media/vc5L6VoTB6tnW/giphy.gif" class="img"></img>
-   <div>Nsdid, sodales consequat enim. Aenean dapibus cursus accumsan.</div>
+  <!-- MODALS -->
+  <div class="product" id="modal01" onclick="Modal.close(event)" data-backdrop data-modal-close>
+    <section class="modal">
+      <header class="modal--header">
+        <h3 class="modal--title">Modal 1</h3>
+        <div class="button" data-type="icon" onclick="Modal.close(event)" data-modal-close><svg class="icon icon-clear"
+            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path
+              d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+          </svg></div>
+      </header>
+      <div class="modal--content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex fugiat explicabo similique assumenda! Corporis
+          harum, necessitatibus dolorem dolorum ex? Delectus dolores voluptas a rem, inventore facere ea quisquam
+          suscipit possimus.</p>
+      </div>
+      <footer class="modal--footer">
+        <button onclick="Modal.close(event)" data-modal-close>Close modal</button>
+        <button onclick="Modal.change('#modal022', event)">Change modal</button>
+      </footer>
+    </section>
   </div>
-</div>
 
+  <div class="product" id="modal022" data-backdrop>
+    <form action="" class="modal">
+      <header class="modal--header">
+        <h3 class="modal--title">Modal Form</h3>
+        <div class="button" data-type="icon" onclick="Modal.close(event)" data-modal-close><svg class="icon icon-clear"
+            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path
+              d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+          </svg></div>
+      </header>
+      <div class="modal--content">
+        <div class="form-control">
+          <label for="username">Username</label>
+          <input type="text" placeholder="florinpop17" id="username" />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="username">Email</label>
+          <input type="email" placeholder="a@florin-pop.com" id="email" />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="username">Password</label>
+          <input type="password" placeholder="Password" id="password" />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+        <div class="form-control">
+          <label for="username">Password check</label>
+          <input type="password" placeholder="Password two" id="password2" />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+      </div>
+      <footer class="modal--footer">
+        <button type="submit">Submit</button>
+      </footer>
+    </form>
+  </div>
+
+  <!-- MODALS -->
+  <div class="product" id="modal02" onclick="Modal.close(event)" data-backdrop data-modal-close>
+    <section class="modal">
+      <header class="modal--header">
+        <h3 class="modal--title">Modal 2</h3>
+        <div class="button" data-type="icon" onclick="Modal.close(event)" data-modal-close><svg class="icon icon-clear"
+            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path
+              d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+          </svg></div>
+      </header>
+      <div class="modal--content">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex fugiat explicabo similique assumenda! Corporis
+          harum, necessitatibus dolorem dolorum ex? Delectus dolores voluptas a rem, inventore facere ea quisquam
+          suscipit possimus.</p>
+      </div>
+      <footer class="modal--footer">
+        <button onclick="Modal.close(event)" data-modal-close>Close modal</button>
+        <button onclick="Modal.change('#modal02', event)">Change modal</button>
+      </footer>
+    </section>
+  </div>
 
 
 
