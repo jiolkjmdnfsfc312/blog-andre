@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Solity | Drum</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css'>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+  <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+  <!-- partial:index.partial.html -->
+  <div class="progress pink">
+    <div class="indeterminate white"></div>
+  </div>
+  <div class="app" style="display: none;">
+    <div class="sequencer">
+      <div class="steps"></div>
+    </div>
+    <a class="regenerate btn-floating btn-large waves-effect waves-light pink darken-2 pulse">
+      <i class="material-icons">shuffle</i>
+    </a>
+    <div class="controls">
+      <div class="control">
+        <a class="playpause btn-floating btn-large waves-effect waves-light blue">
+          <i class="material-icons play-icon">play_arrow</i>
+          <i class="material-icons pause-icon" style="display: none">pause</i>
+        </a>
+      </div>
+      <div class="control">
+        <div class="input-field grey-text">
+          <select id="pattern-length">
+            <option>4</option>
+            <option>8</option>
+            <option selected>16</option>
+            <option>32</option>
+          </select>
+          Pattern length
+        </div>
+      </div>
+      <div class="control">
+        <p class="range-field grey-text">
+          <input type="range" id="tempo" min="20" max="240" value="120" step="1"> Tempo
+        </p>
+      </div>
+      <div class="control">
+        <p class="range-field grey-text">
+          <input type="range" id="swing" min="0.5" max="0.7" value="0.55" step="0.05"> Swing
+        </p>
+      </div>
+      <div class="control">
+        <p class="range-field grey-text">
+          <input type="range" id="temperature" class="tooltipped" min="0.5" max="2" value="1.1" step="0.1"
+            data-tooltip="Higher temperatures will make the neural network generates wilder patterns" data-delay="500">
+          Temperature
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="info">
+    <div>
+      <p class="webmidi-enabled" style="display: none;">
+        Output:
+        <select class="midi-output"></select>
+      </p>
+    </div>
+
+    <div>
+      <p class="webmidi-enabled" style="display: none;">
+        MIDI clock output:
+        <select class="midi-clock-output"></select>
+      </p>
+    </div>
+
+    <div>
+      <p class="webmidi-enabled" style="display: none;">
+        MIDI clock input:
+        <select class="midi-clock-input"></select>
+      </p>
+    </div>
+  </div>
+  <!-- partial -->
+  <script src='https://cdn.jsdelivr.net/npm/babel-regenerator-runtime@6.5.0/runtime.min.js'></script>
+  <script src='https://cdn.jsdelivr.net/npm/lodash@4.17.5/lodash.min.js'></script>
+  <script src='https://cdn.jsdelivr.net/npm/@magenta/music@1.1.11/dist/magentamusic.min.js'></script>
+  <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js'></script>
+  <script src='https://cdn.jsdelivr.net/npm/web-animations-js@2.3.1/web-animations.min.js'></script>
+  <script src='https://cdn.jsdelivr.net/npm/webmidi@2.0.0/webmidi.min.js'></script>
+  <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>
