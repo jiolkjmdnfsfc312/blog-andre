@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #preloader{
+    background: #000 url(assets/images/banner-2.jpg) no-repeat center center ;
+    background-size: 15%;
+    height: 100%;
+    width: 100vw;
+    z-index: 100000;
+    position: fixed;
+}
+    </style>
+</head>
+<body>
+    <div id="preloader"></div>
+
+    <img src="assets/images/banner-1.jpg" style="width: 1000;">
+
+<script>
+    var loader = document.getElementById("preloader");
+
+    window.addEventListener("load", function(){ 
+      window.onscroll = function(){window.scrollTo(0,0)};
+})
+</script>
+</body>
+</html>
