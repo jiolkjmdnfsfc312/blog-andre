@@ -18,11 +18,6 @@ body {
 }
 
 
-/*/////////////////////
-//        HUD        //
-/////////////////////*/
-
-
 .hud__score,
 .pause-btn {
 	position: fixed;
@@ -103,12 +98,6 @@ body {
 	transform-origin: 0 0;
 }
 
-
-
-/*/////////////////////
-//       MENUS       //
-/////////////////////*/
-
 .menus::before {
 	content: '';
 	pointer-events: none;
@@ -132,8 +121,6 @@ body {
 .menus.interactive-mode::before {
 	opacity: 0.02;
 }
-
-
 
 /* Menu containers */
 .menu {
@@ -174,11 +161,8 @@ body {
 	pointer-events: auto;
 }
 
-
-/* Common menu elements */
-
 h1 {
-	font-size: 4rem;
+	font-size: 2rem;
 	line-height: 0.95;
 	text-align: center;
 	font-weight: bold;
@@ -233,7 +217,6 @@ button::before {
 	transition: opacity 0.3s, transform 0.3s;
 }
 
-/* No `:focus` styles because this is a mouse/touch game! */
 button:active {
 	opacity: 1;
 }

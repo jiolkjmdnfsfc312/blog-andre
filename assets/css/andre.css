@@ -148,6 +148,10 @@ body {
   user-select:none;
 }
 
+img {
+  pointer-events: none;
+}
+
 /**
  * scrollbar style
  */
@@ -1332,7 +1336,7 @@ body::-webkit-scrollbar-thumb:hover {
   padding: 4px 0;
 }
 
-.sidebar .price-box {
+.sidebar .date-box {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1344,12 +1348,12 @@ body::-webkit-scrollbar-thumb:hover {
   gap: 15px;
 }
 
-.sidebar .price-box del {
+.sidebar .date-box del {
   color: var(--sonic-silver);
   font-size: 13px;
 }
 
-.sidebar .price-box .price {
+.sidebar .date-box .date {
   font-size: var(--fs-7);
   font-weight: var(--weight-600);
   color: var(--davys-gray);
@@ -1469,10 +1473,10 @@ body::-webkit-scrollbar-thumb:hover {
 .product-minimal .date {
   font-size: var(--fs-7);
   font-weight: var(--weight-700);
-  color: var(--salmon-pink);
+  color: var(--sandy-brown);
 }
 
-.product-minimal .price-box del {
+.product-minimal .date-box del {
   font-size: var(--fs-9);
   color: var(--sonic-silver);
 }
@@ -1558,7 +1562,7 @@ body::-webkit-scrollbar-thumb:hover {
   margin-bottom: 10px;
 }
 
-.product-featured .price-box {
+.product-featured .date-box {
   font-size: var(--fs-3);
   display: -webkit-box;
   display: -webkit-flex;
@@ -1568,7 +1572,7 @@ body::-webkit-scrollbar-thumb:hover {
   margin-bottom: 10px;
 }
 
-.product-featured .price {
+.product-featured .date {
   color: var(--salmon-pink);
   font-weight: var(--weight-700);
 }
@@ -1863,7 +1867,7 @@ body::-webkit-scrollbar-thumb:hover {
   margin-bottom: 10px;
 }
 
-.product-grid .price-box {
+.product-grid .date-box {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -1874,7 +1878,7 @@ body::-webkit-scrollbar-thumb:hover {
   margin-bottom: 10px;
 }
 
-.product-grid .price {
+.product-grid .date {
   font-weight: var(--weight-700);
 }
 
@@ -3904,35 +3908,6 @@ footer {
 .is-visible {
   display: block;
 }
-
-/*-----------------------------------*\
-  #Loader
-\*-----------------------------------*/
-.loader{
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: lightgrey;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  z-index: 999;
-}
-
-.disppear{
-  animation: vanish 1s forwards;
-}
-@keyframes vanish {
-  100%{
-    opacity: 0;
-    visibility: hidden;
-  }
-}
-
-
 
 /*-----------------------------------*\
   #Slider Modal
