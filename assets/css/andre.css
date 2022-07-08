@@ -3867,6 +3867,9 @@ footer {
   max-height: calc(100vh - 1rem);
   width: 100%;
 }
+.desk-modal {
+  margin-top: 10px;
+}
 .date-modal {
   margin-top: 10px;
   font-weight: bold;
@@ -3983,13 +3986,13 @@ footer {
 
 #slider #back,
 #slider #forword {
-	width: 6%;
+	width: 15%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	opacity: 0;
 	transition: 0.3s;
-	cursor: pointer;
+	cursor: none;
 	position: absolute;
 	top: 0;
 	left: 0;
