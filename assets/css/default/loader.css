@@ -1,3 +1,8 @@
+.img-loader {
+  width: 80px;
+  pointer-events: none;
+  cursor: none;
+}
 body .vertical-centered-box {
   position: absolute;
   width: 100%;
