@@ -1,64 +1,84 @@
 <!-- partial:index.partial.html -->
 <!DOCTYPE html>
-<html lang='en'>
+<html lang="en">
 
 <head>
-  <meta charset='UTF-8'>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <!-- favicon -->
   <link rel="shortcut icon" href="assets/img/logo/andre.png" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css?family=Fredoka+One|Josefin+Sans&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css">
 
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link rel="stylesheet" href="assets/css/style.css" />
   <title>@andrep13_</title>
-
 </head>
 
 <body>
-  <div class="triangle"></div>
+  <div id="particles-js"></div>
   <div class="container">
-    <div class="space"></div>
-    <div class="header--box">
-      <header class="header">
-        <div class="header__chat-box">
-          <div class="header__chat-box--behind">
-            <div class="header__chat-box--front">
-              <h1>Hi.</h1>
-            </div>
+    <img class="profile" src="assets/img/logo/andre.png" />
+
+    <h2>@andrep13_</h2>
+    <p class="subtitle">Frontend Developer</p>
+    <p>Welcome To My Link ✌🏼</p>
+
+    <div class="info-container">
+      <div class="social-media-container">
+        <a href="https://www.instagram.com/andrep13_/" class="sosmed">
+          <i class='bx bxl-instagram' ></i>
+        </a>
+        <a data-trigger="coming-soon" href="javascript:volid(0)" class="sosmed">
+          <i class='bx bxl-youtube' data-trigger="coming-soon"></i>
+        </a>
+        <a href="https://www.tiktok.com/@andrep13_" class="sosmed">
+          <i class='bx bxl-tiktok'></i>
+        </a>
+      </div>
+
+      <div class="content">
+        <div id="secondary-content" class="secondary-content">
+          <h3>
+            <i id="go-back-button" data-feather="arrow-left"></i> Zetachat
+          </h3>
+          <a class="link" href="https://www.zetachat.my.id/">
+            Zetachat
+          </a>
+          <a class="link" href="https://www.blog-zetachat.my.id/">
+            Blog Zetachat
+          </a>
+        </div>
+        <div class="main-content">
+          <p>Video YouTube Favorit 👇🏼</p>
+          <div class="video-container">
+            <!-- Iframe --
+            <iframe src="https://www.youtube.com/embed/bmlD6YgElYE" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+            <!-- Iframe -->
           </div>
+          <a data-trigger="coming-soon-blog" href="javscript:volid(0)"
+            class="link highlight">
+            ⭐️ Blog Andre
+          </a>
+          <a id="setup-button" class="link">
+            Zetachat
+          </a>
+          <a class="link" data-trigger="coming-soon" href="javascript:volid(0)">
+            youtube
+          </a>
         </div>
-
-        <div class="header__icon-box">
-          <img src="assets/img/logo/andre.png" alt="@andrep13_" class="header__icon" />
-        </div>
-      </header>
-    </div>
-
-    <div class="links-container">
-      <li class="right">
-        <a class="link" href="https://www.zetachat.my.id/">Zetachat</a>
-      </li>
-      <li class="left" data-trigger="coming-soon">
-        <a class="link" data-trigger="coming-soon" href="javascript:volid(0)">YouTube</a>
-      </li>
-    </div>
-
-    <div class="user-info-box">
-      <div class="user-info">
-        <h2>@andrep13_</h2>
       </div>
     </div>
   </div>
 
-  <!-- partial -->
-
-  <!-- Modal Coming Soon -->
+  <!-- Modal coming-soon -->
   <div class="dialog is-hidden" data-in="500" data-out="700" id="coming-soon">
     <div class="dialog-mask bottom-sheet-mask"></div>
     <div class="dialog-container bottom-sheet-container" data-close>
       <div aria-labelledby="bottom-sheet-big-title" class="dialog-surface bottom-sheet-surface" role="dialog">
         <div class="dialog-header">
-          <h2 class="dialog-title" id="bottom-sheet-big-title">Youtube</h2>
+          <h2 class="dialog-title" id="bottom-sheet-big-title">YouTube</h2>
           <button aria-label="Close dialog" class="dialog-close" type="button">×</button>
         </div>
         <div class="dialog-content" style="text-align: left">
@@ -67,8 +87,27 @@
       </div>
     </div>
   </div>
-  <!-- Modal Coming Soon -->
+  <!-- Modal coming-soon -->
 
+  <!-- Modal coming-soon -->
+  <div class="dialog is-hidden" data-in="500" data-out="700" id="coming-soon-blog">
+    <div class="dialog-mask bottom-sheet-mask"></div>
+    <div class="dialog-container bottom-sheet-container" data-close>
+      <div aria-labelledby="bottom-sheet-big-title" class="dialog-surface bottom-sheet-surface" role="dialog">
+        <div class="dialog-header">
+          <h2 class="dialog-title" id="bottom-sheet-big-title">Blog Andre</h2>
+          <button aria-label="Close dialog" class="dialog-close" type="button">×</button>
+        </div>
+        <div class="dialog-content" style="text-align: left">
+          <p class="desk-modal">Blog Andre Dalam Masa Pembuatan</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal coming-soon -->
+
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="assets/js/script.js"></script>
 
 </body>
