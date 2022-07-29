@@ -11,10 +11,26 @@
 
   <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
   <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="assets/css/default/loader/style.css" />
   <title>@andrep13_</title>
 </head>
 
 <body>
+  <div class="loader">
+    <div class="loader-2">
+      <svg>
+        <defs>
+          <filter id="goo">
+            <feGaussianBlur in="SourceGraphic" stdDeviation="2" result="blur" />
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 5 -2" result="gooey" />
+            <feComposite in="SourceGraphic" in2="gooey" operator="atop"/>
+          </filter>
+        </defs>
+      </svg>
+    </div>
+    <!-- partial -->
+  </div>
+
   <div id="particles-js"></div>
   <div class="container">
     <img class="profile" src="assets/img/logo/andre.png" />
@@ -103,6 +119,7 @@
         </div>
         <div class="dialog-content" style="text-align: left">
           <p class="desk-modal">Blog Andre Dalam Masa Pembuatan</p>
+          
         </div>
       </div>
     </div>
@@ -112,6 +129,7 @@
   <script src="https://unpkg.com/feather-icons"></script>
   <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script src="assets/js/script.js"></script>
+  <script src="assets/js/default/loader/script.js"></script>
 
 </body>
 
