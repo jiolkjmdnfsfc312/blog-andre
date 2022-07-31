@@ -420,14 +420,14 @@ body {
   border: none;
   color: darkslategray;
   cursor: pointer;
-  font-size: 150%;
+  font-size: 30px;
   font-weight: 100;
   line-height: 1;
   margin: 0;
   padding: 0.5rem;
   position: absolute;
   right: 0.5rem;
-  top: 0.5rem;
+  top: 0.2rem;
   cursor: none;
 }
 .dialog-close:focus, .dialog-close:hover {
