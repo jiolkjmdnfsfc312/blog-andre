@@ -428,7 +428,7 @@ body {
   position: absolute;
   right: 0.5rem;
   top: 0.5rem;
-  cursor: none;
+  
 }
 .dialog-close:focus, .dialog-close:hover {
   color: darkslateblue;
