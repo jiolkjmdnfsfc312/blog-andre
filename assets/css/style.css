@@ -189,7 +189,7 @@ body {
   border-radius: 16px;
   text-decoration: none;
   color: #43085f;
-  cursor: n;
+  cursor: none;
   -webkit-box-shadow: 4px 4px 18px -5px rgba(179, 179, 179, 0.72);
   -moz-box-shadow: 4px 4px 18px -5px rgba(179, 179, 179, 0.72);
   box-shadow: 4px 4px 18px -5px rgba(179, 179, 179, 0.72);
@@ -428,7 +428,7 @@ body {
   position: absolute;
   right: 0.5rem;
   top: 0.5rem;
-  
+  cursor: none;
 }
 .dialog-close:focus, .dialog-close:hover {
   color: darkslateblue;
