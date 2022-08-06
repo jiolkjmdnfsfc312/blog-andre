@@ -1063,6 +1063,8 @@ main {
   border-radius: 16px;
   overflow: hidden;
   margin-bottom: 15px;
+  cursor: text !important;
+  text-decoration: none !important;
 }
 
 .project-img::before {
@@ -1162,6 +1164,8 @@ main {
   box-shadow: var(--shadow-4);
   border-radius: 16px;
   z-index: 1;
+  cursor: text !important;
+  text-decoration: none !important;
 }
 
 .blog-post-item>a::before {
