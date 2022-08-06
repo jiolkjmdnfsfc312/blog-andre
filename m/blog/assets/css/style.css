@@ -1020,6 +1020,8 @@ main {
   width: 100%;
   padding: 8px 10px;
   border-radius: 8px;
+  cursor: text !important;
+  text-decoration: none !important;
 }
 
 .select-item button:hover {
