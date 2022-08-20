@@ -261,6 +261,10 @@ article.active {
   border-radius: 3px;
 }
 
+.modal-title {
+  font-weight: bold;
+}
+
 .has-scrollbar::-webkit-scrollbar {
   width: 5px;
   /* for vertical scrollbar */
