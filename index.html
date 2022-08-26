@@ -147,14 +147,9 @@
             <button class="navbar-link" data-nav-link>Resume</button>
           </li>
 
-          <!-- NAVBAR --
+          <!-- NAVBAR -->
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-          <!-- NAVBAR -->
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blabz</button>
           </li>
 
           <li class="navbar-item">
@@ -618,114 +613,62 @@
       </article>
 
 
+
+
+
       <!--
-        - #ABOUT
+        - #PORTFOLIO
       -->
 
-      <article class="about  active" data-page="blabz">
+      <article class="portfolio" data-page="portfolio">
 
         <header>
-          <h2 class="h2 article-title">Blabz</h2>
+          <h2 class="h2 article-title">Portfolio</h2>
         </header>
 
-        <section class="about-text">
-          <p>
-            Hai Aplikasi Blabz Saya Bangun Untuk Kalian Yang Bingung Saat Pengerjaan Presentasi.
-          </p>
+        <section class="projects">
 
-          <p>
-            Kalian Dapat Mengunduh Secara Gratis Namun Aplikasi Ini Khusus Untuk Pengguna Android Only. Aplikasi Ini
-            Tersedia Pada Website <b onClick="parent.location='https://www.blabz.my.id/'">https://www.blabz.my.id/</b> Setelah
-            Anda Unduh Harap Login Menggunakan Google Kalian.
-          </p>
-        </section>
+          <ul class="filter-list">
 
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
 
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">What i'm doing</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="/assets/img/blog/icon-app.svg" alt="Blog Andre" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Android Only</h4>
-
-                <p class="service-item-text">
-                  Untuk Saat Ini Aplikasi Blabz Hanya Dapat Di Unduh Dengan Device Android Only.
-                </p>
-              </div>
-
+            <li class="filter-item">
+              <button data-filter-btn>Applications</button>
             </li>
 
           </ul>
 
-        </section>
+          <div class="filter-select-box">
 
+            <button class="filter-select" data-select>
 
+              <div class="select-value" data-selecct-value>Select category</div>
 
-        <!--
-        - #PORTFOLIO
-      -->
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
 
-        <article class="portfolio" data-page="portfolio">
+            </button>
 
-          <header>
-            <h2 class="h2 article-title">Portfolio</h2>
-          </header>
+            <ul class="select-list">
 
-          <section class="projects">
-
-            <ul class="filter-list">
-
-              <li class="filter-item">
-                <button class="active" data-filter-btn>All</button>
+              <li class="select-item">
+                <button data-select-item>All</button>
               </li>
 
-              <li class="filter-item">
-                <button data-filter-btn>Applications</button>
+              <li class="select-item">
+                <button data-select-item>Applications</button>
               </li>
 
             </ul>
 
-            <div class="filter-select-box">
+          </div>
 
-              <button class="filter-select" data-select>
+          <ul class="project-list">
 
-                <div class="select-value" data-selecct-value>Select category</div>
-
-                <div class="select-icon">
-                  <ion-icon name="chevron-down"></ion-icon>
-                </div>
-
-              </button>
-
-              <ul class="select-list">
-
-                <li class="select-item">
-                  <button data-select-item>All</button>
-                </li>
-
-                <li class="select-item">
-                  <button data-select-item>Applications</button>
-                </li>
-
-              </ul>
-
-            </div>
-
-            <ul class="project-list">
-
-              <!-- Project --
+            <!-- Project --
             <li class="project-item  active" data-filter-item data-category="applications">
               <a data-trigger="video" href="javscript:volid(0)">
                 <figure class="project-img">
@@ -740,126 +683,125 @@
             </li>
             <!-- Project -->
 
-            </ul>
-
-          </section>
-
-        </article>
-
-
-        <!-- Citizen -->
-        <article class="citizen" data-page="citizen">
-          <header>
-            <h2 class="h2 article-title">Citizen</h2>
-          </header>
-
-          <ul class="project-list">
-
-            <!-- Project -->
-            <li class="project-item  active" data-filter-item data-category="foto">
-              <a data-trigger="citizen1" href="javscript:volid(0)">
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="/assets/img/citizen/1.png" alt="Blog Andre" loading="lazy">
-                </figure>
-                <h3 class="project-title">Citizen 1</h3>
-                <p class="project-category">Warna-Warni Negriku</p>
-              </a>
-            </li>
-            <!-- Project -->
-
           </ul>
 
-          </section>
-        </article>
+        </section>
 
-        <!-- Blog -->
+      </article>
 
-        <article class="blog" data-page="blog">
 
-          <header>
-            <h2 class="h2 article-title">Blog</h2>
-          </header>
 
-          <section class="blog-posts">
 
-            <ul class="blog-posts-list">
 
-              <!-- Blog --
+      <!-- Citizen -->
+      <article class="citizen" data-page="citizen">
+        <header>
+          <h2 class="h2 article-title">Citizen</h2>
+        </header>
+
+        <ul class="project-list">
+
+          <!-- Project -->
+          <li class="project-item  active" data-filter-item data-category="foto">
+            <a data-trigger="citizen1" href="javscript:volid(0)">
+              <figure class="project-img">
+                <div class="project-item-icon-box">
+                  <ion-icon name="eye-outline"></ion-icon>
+                </div>
+                <img src="/assets/img/citizen/1.png" alt="Blog Andre" loading="lazy">
+              </figure>
+              <h3 class="project-title">Citizen 1</h3>
+              <p class="project-category">Warna-Warni Negriku</p>
+            </a>
+          </li>
+          <!-- Project -->
+
+        </ul>
+
+        </section>
+      </article>
+
+      <!-- Blog -->
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <!-- Blog -->
             <li class="blog-post-item">
-              <a href="#">
+              <a data-trigger="aplikasi-blabz" href="javscript:volid(0)">
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                  <img src="assets/img/blog/blabz/blogadre-s1.png" alt="Blog Andre" loading="lazy">
                 </figure>
                 <div class="blog-content">
                   <div class="blog-meta">
-                    <p class="blog-category">Design</p>
+                    <p class="blog-category">App</p>
                     <span class="dot"></span>
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <time datetime="2022-02-23">Agu 26, 2022</time>
                   </div>
-                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+                  <h3 class="h3 blog-item-title">Aplikasi Blabz</h3>
                   <p class="blog-text">
-                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                    Aplikasi Ini Dapat Kalian Unduh Melalui Situs Resmi
                   </p>
                 </div>
               </a>
             </li>
             <!-- Blog -->
 
-            </ul>
+          </ul>
 
-          </section>
+        </section>
 
-        </article>
-
-
+      </article>
 
 
 
-        <!--
+
+
+      <!--
         - #CONTACT
       -->
 
-        <article class="contact" data-page="contact">
+      <article class="contact" data-page="contact">
 
-          <header>
-            <h2 class="h2 article-title">Contact</h2>
-          </header>
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
 
-          <section class="contact-form">
+        <section class="contact-form">
 
-            <h3 class="h3 form-title">Contact Form</h3>
+          <h3 class="h3 form-title">Contact Form</h3>
 
-            <form action="#" class="form" data-form>
+          <form action="#" class="form" data-form>
 
-              <div class="input-wrapper">
-                <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
 
-                <input type="email" name="email" class="form-input" placeholder="Email address" required
-                  data-form-input>
-              </div>
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
 
-              <textarea name="message" class="form-input" placeholder="Your Message" required
-                data-form-input></textarea>
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
 
-              <button class="form-btn" type="submit" disabled data-form-btn>
-                <ion-icon name="paper-plane"></ion-icon>
-                <span>Send Message</span>
-              </button>
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
 
-            </form>
+          </form>
 
-          </section>
+        </section>
 
-        </article>
+      </article>
 
     </div>
 
   </main>
-
-
 
   <!-- Modal coming-soon -->
   <div class="dialog is-hidden" data-in="500" data-out="700" id="video">
@@ -879,8 +821,9 @@
   </div>
   <!-- Modal coming-soon -->
 
+  <!-- Modal Citizen Blog -->
 
-  <!-- Modal coming-soon -->
+  <!-- Modal Citizen -->
   <div class="dialog is-hidden" data-in="500" data-out="700" id="citizen1">
     <div class="dialog-mask bottom-sheet-mask"></div>
     <div class="dialog-container bottom-sheet-container" data-close>
@@ -916,12 +859,47 @@
       </div>
     </div>
   </div>
-  <!-- Modal coming-soon -->
+  <!-- Modal Citizen -->
 
 
-  <!--
-    - custom js link
-  -->
+
+
+
+
+  <!-- Modal Blog -->
+
+  <!-- Modal Aplikasi Blabz -->
+  <div class="dialog is-hidden" data-in="500" data-out="700" id="aplikasi-blabz">
+    <div class="dialog-mask bottom-sheet-mask"></div>
+    <div class="dialog-container bottom-sheet-container" data-close>
+      <div aria-labelledby="bottom-sheet-big-title" class="dialog-surface bottom-sheet-surface" role="dialog">
+        <div class="dialog-header">
+          <h2 class="dialog-title" id="bottom-sheet-big-title">Aplikasi Blabz</h2>
+          <button aria-label="Close dialog" class="dialog-close" type="button">×</button>
+        </div>
+        <div class="dialog-content" style="text-align: left">
+          <li class="project-item  active" data-filter-item data-category="applications">
+            <figure class="project-img">
+              <img src="assets/img/blog/blabz/blogadre-s1.png" alt="Blog Andre" loading="lazy">
+            </figure>
+          </li>
+          <div class="dialog-content" style="text-align: left">
+            <h3 style="modal-title">Aplikasi Blabz</h3>
+            <p class="desk-modal">Aplikasi Ini Dapat Kalian Unduh Melalui Situs Resmi <a href="https://www.blabz.my.id/">https://www.blabz.my.id/</a> Namun Aplikasi Ini Hanya Dapat Kalian Gunakan Pada Android Only
+            </p>
+
+            <p class="desk-modal">Aplikasi Ini Dalam Tahap Pengembangan Follow Instagram <b>@andrep13_</b> & <b>@blabzid</b> Agar Kalian Tidak Tertinggal Saat Ada Info Mengenai Aplikasi Ini.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal Aplikasi Blabz -->
+
+
+  <!-- custom js link -->
   <script src="assets/js/blog/script.js"></script>
   <script src="assets/js/blog/modal-blog.js"></script>
 
