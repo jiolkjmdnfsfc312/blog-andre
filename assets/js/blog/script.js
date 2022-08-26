@@ -157,3 +157,7 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
+
+
+var b = document.getElementById('blabz');
+    b.href = "https://www.blabz.my.id/";

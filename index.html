@@ -147,9 +147,14 @@
             <button class="navbar-link" data-nav-link>Resume</button>
           </li>
 
-          <!-- NAVBAR -->
+          <!-- NAVBAR --
           <li class="navbar-item">
             <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+          <!-- NAVBAR -->
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blabz</button>
           </li>
 
           <li class="navbar-item">
@@ -251,7 +256,7 @@
                 <h4 class="h4 service-item-title">Mobile Apps</h4>
 
                 <p class="service-item-text">
-                  Saya Sudah Memiliki Aplikasi Yang Bernama Zetachat
+                  Saya Sudah Memiliki Aplikasi Yang Bernama Blabz
                 </p>
               </div>
 
@@ -413,7 +418,7 @@
 
         <!--
           - clients
-        --
+        -- 
 
         <section class="clients">
 
@@ -613,62 +618,114 @@
       </article>
 
 
-
-
-
       <!--
-        - #PORTFOLIO
+        - #ABOUT
       -->
 
-      <article class="portfolio" data-page="portfolio">
+      <article class="about  active" data-page="blabz">
 
         <header>
-          <h2 class="h2 article-title">Portfolio</h2>
+          <h2 class="h2 article-title">Blabz</h2>
         </header>
 
-        <section class="projects">
+        <section class="about-text">
+          <p>
+            Hai Aplikasi Blabz Saya Bangun Untuk Kalian Yang Bingung Saat Pengerjaan Presentasi.
+          </p>
 
-          <ul class="filter-list">
+          <p>
+            Kalian Dapat Mengunduh Secara Gratis Namun Aplikasi Ini Khusus Untuk Pengguna Android Only. Aplikasi Ini
+            Tersedia Pada Website <b onClick="parent.location='https://www.blabz.my.id/'">https://www.blabz.my.id/</b> Setelah
+            Anda Unduh Harap Login Menggunakan Google Kalian.
+          </p>
+        </section>
 
-            <li class="filter-item">
-              <button class="active" data-filter-btn>All</button>
-            </li>
 
-            <li class="filter-item">
-              <button data-filter-btn>Applications</button>
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="/assets/img/blog/icon-app.svg" alt="Blog Andre" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Android Only</h4>
+
+                <p class="service-item-text">
+                  Untuk Saat Ini Aplikasi Blabz Hanya Dapat Di Unduh Dengan Device Android Only.
+                </p>
+              </div>
+
             </li>
 
           </ul>
 
-          <div class="filter-select-box">
+        </section>
 
-            <button class="filter-select" data-select>
 
-              <div class="select-value" data-selecct-value>Select category</div>
 
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
+        <!--
+        - #PORTFOLIO
+      -->
 
-            </button>
+        <article class="portfolio" data-page="portfolio">
 
-            <ul class="select-list">
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
 
-              <li class="select-item">
-                <button data-select-item>All</button>
+          <section class="projects">
+
+            <ul class="filter-list">
+
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
               </li>
 
-              <li class="select-item">
-                <button data-select-item>Applications</button>
+              <li class="filter-item">
+                <button data-filter-btn>Applications</button>
               </li>
 
             </ul>
 
-          </div>
+            <div class="filter-select-box">
 
-          <ul class="project-list">
+              <button class="filter-select" data-select>
 
-            <!-- Project --
+                <div class="select-value" data-selecct-value>Select category</div>
+
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+
+              </button>
+
+              <ul class="select-list">
+
+                <li class="select-item">
+                  <button data-select-item>All</button>
+                </li>
+
+                <li class="select-item">
+                  <button data-select-item>Applications</button>
+                </li>
+
+              </ul>
+
+            </div>
+
+            <ul class="project-list">
+
+              <!-- Project --
             <li class="project-item  active" data-filter-item data-category="applications">
               <a data-trigger="video" href="javscript:volid(0)">
                 <figure class="project-img">
@@ -683,57 +740,54 @@
             </li>
             <!-- Project -->
 
+            </ul>
+
+          </section>
+
+        </article>
+
+
+        <!-- Citizen -->
+        <article class="citizen" data-page="citizen">
+          <header>
+            <h2 class="h2 article-title">Citizen</h2>
+          </header>
+
+          <ul class="project-list">
+
+            <!-- Project -->
+            <li class="project-item  active" data-filter-item data-category="foto">
+              <a data-trigger="citizen1" href="javscript:volid(0)">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="/assets/img/citizen/1.png" alt="Blog Andre" loading="lazy">
+                </figure>
+                <h3 class="project-title">Citizen 1</h3>
+                <p class="project-category">Warna-Warni Negriku</p>
+              </a>
+            </li>
+            <!-- Project -->
+
           </ul>
 
-        </section>
+          </section>
+        </article>
 
-      </article>
+        <!-- Blog -->
 
+        <article class="blog" data-page="blog">
 
+          <header>
+            <h2 class="h2 article-title">Blog</h2>
+          </header>
 
+          <section class="blog-posts">
 
+            <ul class="blog-posts-list">
 
-      <!-- Citizen -->
-      <article class="citizen" data-page="citizen">
-        <header>
-          <h2 class="h2 article-title">Citizen</h2>
-        </header>
-
-        <ul class="project-list">
-
-          <!-- Project -->
-          <li class="project-item  active" data-filter-item data-category="foto">
-            <a data-trigger="citizen1" href="javscript:volid(0)">
-              <figure class="project-img">
-                <div class="project-item-icon-box">
-                  <ion-icon name="eye-outline"></ion-icon>
-                </div>
-                <img src="/assets/img/citizen/1.png" alt="Blog Andre" loading="lazy">
-              </figure>
-              <h3 class="project-title">Citizen 1</h3>
-              <p class="project-category">Warna-Warni Negriku</p>
-            </a>
-          </li>
-          <!-- Project -->
-
-        </ul>
-
-        </section>
-      </article>
-
-      <!-- Blog -->
-
-      <article class="blog" data-page="blog">
-
-        <header>
-          <h2 class="h2 article-title">Blog</h2>
-        </header>
-
-        <section class="blog-posts">
-
-          <ul class="blog-posts-list">
-
-            <!-- Blog --
+              <!-- Blog --
             <li class="blog-post-item">
               <a href="#">
                 <figure class="blog-banner-box">
@@ -754,50 +808,52 @@
             </li>
             <!-- Blog -->
 
-          </ul>
+            </ul>
 
-        </section>
+          </section>
 
-      </article>
-
-
+        </article>
 
 
 
-      <!--
+
+
+        <!--
         - #CONTACT
       -->
 
-      <article class="contact" data-page="contact">
+        <article class="contact" data-page="contact">
 
-        <header>
-          <h2 class="h2 article-title">Contact</h2>
-        </header>
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
 
-        <section class="contact-form">
+          <section class="contact-form">
 
-          <h3 class="h3 form-title">Contact Form</h3>
+            <h3 class="h3 form-title">Contact Form</h3>
 
-          <form action="#" class="form" data-form>
+            <form action="#" class="form" data-form>
 
-            <div class="input-wrapper">
-              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <div class="input-wrapper">
+                <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
 
-              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
-            </div>
+                <input type="email" name="email" class="form-input" placeholder="Email address" required
+                  data-form-input>
+              </div>
 
-            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+              <textarea name="message" class="form-input" placeholder="Your Message" required
+                data-form-input></textarea>
 
-            <button class="form-btn" type="submit" disabled data-form-btn>
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Send Message</span>
-            </button>
+              <button class="form-btn" type="submit" disabled data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
 
-          </form>
+            </form>
 
-        </section>
+          </section>
 
-      </article>
+        </article>
 
     </div>
 

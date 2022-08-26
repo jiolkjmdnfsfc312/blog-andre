@@ -286,6 +286,10 @@ article.active {
   width: 20px;
 }
 
+.href {
+  color: white;
+  text-decoration: underline;
+}
 .content-card {
   position: relative;
   background: var(--border-gradient-onyx);
