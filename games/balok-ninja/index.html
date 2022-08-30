@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+
+	<title>Balok Ninja</title>
+	<link rel="shortcut icon" href="/assets/img/logo/pp-andre.jpeg" type="image/x-icon">
+	<meta name="description" content="Game By Blog Andre | @andrep13_">
+	<meta name="theme-color" content="#2c3f51">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+
+	<!-- Stylesheet -->
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+	<!-- Game canvas -->
+	<canvas id="c"></canvas>
+
+	<!-- Gameplay HUD -->
+	<div class="hud">
+		<div class="hud__score">
+			<div class="score-lbl"></div>
+			<div class="cube-count-lbl"></div>
+		</div>
+		<div class="pause-btn"><div></div></div>
+		<div class="slowmo">
+			<div class="slowmo__bar"></div>
+		</div>
+	</div>
+
+	<!-- Menu System -->
+	<div class="menus">
+		<div class="menu menu--main">
+			<h1>Balok Ninja</h1>
+			<button type="button" class="play-normal-btn">PLAY GAME</button>
+			<button type="button" class="play-casual-btn">CASUAL MODE</button>
+			<div class="credits">© 2022 <a href="/">Blog Andre</a>.All rigths reserved</div>
+		</div>
+		<div class="menu menu--pause">
+			<h1>Paused</h1>
+			<button type="button" class="resume-btn">RESUME GAME</button>
+			<button type="button" class="menu-btn--pause">MAIN MENU</button>
+		</div>
+		<div class="menu menu--score">
+			<h1>Game Over</h1>
+			<h2>Your Score:</h2>
+			<div class="final-score-lbl"></div>
+			<div class="high-score-lbl"></div>
+			<button type="button" class="play-again-btn">PLAY AGAIN</button>
+			<button type="button" class="menu-btn--score">MAIN MENU</button>
+		</div>
+	</div>
+
+	<!-- build:js combined.js -->
+	<script src="assets/js/globalConfig.js"></script>
+	<script src="assets/js/state.js"></script>
+	<script src="assets/js/utils.js"></script>
+	<script src="assets/js/3dModels.js"></script>
+	<script src="assets/js/Entity.js"></script>
+	<script src="assets/js/getTarget.js"></script>
+	<script src="assets/js/createBurst.js"></script>
+	<script src="assets/js/sparks.js"></script>
+	<script src="assets/js/hud.js"></script>
+	<script src="assets/js/menus.js"></script>
+	<script src="assets/js/actions.js"></script>
+	<script src="assets/js/tick.js"></script>
+	<script src="assets/js/draw.js"></script>
+	<script src="assets/js/canvas.js"></script>
+	<script src="assets/js/interaction.js"></script>
+	<script src="assets/js/index.js"></script>
+	<!-- endbuild -->
+
+	<!-- build:remove -->
+	<script src="assets/js/PERF.js"></script>
+	<script src="assets/js/tests/expect.min.js"></script>
+	<script src="assets/js/tests/testRunner.js"></script>
+	<script src="assets/s/tests/utils.test.js"></script>
+	<!-- endbuild -->
+</body>
+</html>

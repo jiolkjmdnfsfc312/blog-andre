@@ -458,7 +458,7 @@ body {
   max-width: 36em;
   margin-left: auto;
   margin-right: auto;
-  max-height: calc(100vh - 1rem);
+  max-height: calc(100% - 1rem);
   width: 100%;
 }
 .desk-modal {
